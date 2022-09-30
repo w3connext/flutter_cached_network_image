@@ -131,7 +131,7 @@ class ImageLoader implements platform.ImageLoader {
       });
 
       errorListener?.call();
-      rethrow;
+
     } finally {
       await chunkEvents.close();
     }
